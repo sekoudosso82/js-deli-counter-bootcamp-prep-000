@@ -22,3 +22,25 @@
      
       return `There is nobody waiting to be served!`;
      }
+     
+     function  currentLine(line)
+    {
+      var lineLength = line.length;
+      if (lineLength > 0)
+      {
+        var emptArr= [];
+        var index = 0
+        var tempR;
+        var empt = " ";
+        for (var i = 0; i< lineLength; i++)
+        {
+          tempR = i+1+". " +line[i]
+          emptArr.push(tempR)
+        } 
+       
+        return `The line is currently: ${emptArr.join(', ')}`;  
+      }
+      else {
+        return `The line is currently empty.` 
+      }
+  }
