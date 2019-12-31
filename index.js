@@ -8,3 +8,5 @@
     //"Welcome, new customer."
     return `Welcome, ${newPersoneName}. You are number ${indexP} in line.`;
   }
+  
+  
