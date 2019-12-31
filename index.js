@@ -10,3 +10,15 @@
   }
   
   
+  function nowServing(currentLine)
+     {
+       var firstElement;
+       
+       if (currentLine.length>0)
+       {
+         firstElement = currentLine.shift();
+         return `Currently serving ${firstElement}.`;
+       }
+     
+      return `There is nobody waiting to be served!`;
+     }
